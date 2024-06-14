@@ -9,34 +9,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c5a6c4e-167f-495d-9284-f6bd893cbe8f" name="更改" comment="" />
+    <list default="true" id="6c5a6c4e-167f-495d-9284-f6bd893cbe8f" name="更改" comment="商密定制包初始版">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hutool-all-5.8.25.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/managerSSO_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/managerSSO_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6__2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managerSSO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/managerSSO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/impl/ClientManagerPhoneLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/impl/ClientManagerPhoneLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/impl/ConstantV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/impl/ConstantV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/ssoLogin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/ssoLogin.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="商密后台短信登录" />
+                    <option name="lastUsedInstant" value="1718181675" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1718181674" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2dkJ2I4cYwY8YkkHBtB4dhMtTbz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.aa.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/place/managerPhone/src/com/eetrust/sdms/clientinterface/manager/service",
+    "last_opened_file_path": "D:/place/managerPhone/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "工件",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding",
@@ -45,6 +98,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\place\managerPhone\lib" />
       <recent name="D:\place\managerPhone\src\com\eetrust\sdms\clientinterface\manager\service" />
       <recent name="D:\place\managerPhone\src\com\eetrust\sdms\clientinterface\manager\service\impl" />
       <recent name="D:\IdeaProjects\managerSSO\lib" />
@@ -53,7 +107,20 @@
       <recent name="D:\IdeaProjects\managerSSO\lib1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.aa">
+    <configuration name="aa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eetrust.sdms.clientinterface.manager.service.impl.aa" />
+      <module name="managerSSO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eetrust.sdms.clientinterface.manager.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="phoneSSO" />
       <method v="2">
@@ -145,6 +212,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.aa" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -171,11 +243,36 @@
       <workItem from="1713779447896" duration="163000" />
       <workItem from="1714285914195" duration="172000" />
       <workItem from="1716967946945" duration="313000" />
-      <workItem from="1718180388765" duration="745000" />
+      <workItem from="1718180388765" duration="5852000" />
+      <workItem from="1718328018076" duration="2066000" />
     </task>
+    <task id="LOCAL-00001" summary="商密定制包初始版">
+      <option name="closed" value="true" />
+      <created>1718181648629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718181648630</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="商密定制包初始版" />
+    <option name="LAST_COMMIT_MESSAGE" value="商密定制包初始版" />
   </component>
 </project>
