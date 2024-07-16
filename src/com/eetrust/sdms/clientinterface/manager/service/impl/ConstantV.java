@@ -9,8 +9,10 @@ import java.util.Properties;
 public class ConstantV {
 
 	public static String smsUrl = "";
-	public static String accessKey = "";
-	public static String templateId = "";
+	public static String account = "";
+	public static String password = "";
+	public static String tplInstId = "";
+	public static String sendPhone = "";
 	static{
 		Properties p = new Properties();
 		InputStream in;		
@@ -19,8 +21,10 @@ public class ConstantV {
 			p.load(in);	
 			// 获取本应用（业务应用自身）的资源编码（在信任服务资源系统中注册后取得）及身份认证服务地址
 			smsUrl = p.getProperty("smsUrl");
-			accessKey = p.getProperty("accessKey");
-			templateId = p.getProperty("templateId");
+			account = p.getProperty("account");
+			password = p.getProperty("password");
+			tplInstId = p.getProperty("tplInstId");
+			sendPhone = p.getProperty("sendPhone");
 			in.close();
 		} catch (IOException e) {
 			e.printStackTrace();
