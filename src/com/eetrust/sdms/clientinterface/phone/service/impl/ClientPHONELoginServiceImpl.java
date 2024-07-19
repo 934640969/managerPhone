@@ -1,16 +1,15 @@
-package com.eetrust.sdms.clientinterface.manager.service.impl;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+package com.eetrust.sdms.clientinterface.phone.service.impl;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.http.HttpUtil;
-import com.eetrust.sdms.clientinterface.manager.service.IClientManagerPhoneLoginService;
+import com.eetrust.sdms.clientinterface.phone.service.IClientPHONELoginService;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 import java.util.Random;
-
+import org.apache.log4j.Logger;
 /***
  * 管理员的单点登录
  * 
@@ -18,11 +17,14 @@ import java.util.Random;
  *
  */
 
-public class ClientManagerPhoneLoginServiceImpl implements IClientManagerPhoneLoginService {
+public class ClientPHONELoginServiceImpl implements IClientPHONELoginService {
+	private static final Logger log = Logger.getLogger(ClientPHONELoginServiceImpl.class);
 
 	public String ticket(HttpServletRequest request, HttpServletResponse response) throws RuntimeException {
+		log.info("外置jar认证>>>>>>>>>>>>>>>>>>>>>");
 		System.out.println("外置jar认证>>>>>>>>>>>>>>>>>>>>>");
 		String phone = request.getParameter("phone");
+		log.info("phone>>>>>>>"+phone);
 		System.out.println("phone>>>>>>>"+phone);
 		Random random = new Random();
 		StringBuilder sb = new StringBuilder();
@@ -35,6 +37,7 @@ public class ClientManagerPhoneLoginServiceImpl implements IClientManagerPhoneLo
 		String randomNumber = sb.toString();
 		String msg="【新疆电信商密安全系统】您的验证码："+randomNumber+"（有效期为3分钟），发送参考时间为"+ DateUtil.format(new Date(), "yyyy-MM-dd HH:mm:ss") +"。如非本人操作，请忽略本短信!";
 		System.out.println("msg>>>>>>>>>>>>>>"+msg);
+		log.info("msg>>>>>>>>>>>>>>"+msg);
 		String content= Base64.encode(msg, "UTF-8");
 		String xml="<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:cxf=\"http://cxf.server.uccp.ztesoft.com/\"><soapenv:Header/>" +
 				"<soapenv:Body>" +
@@ -42,7 +45,7 @@ public class ClientManagerPhoneLoginServiceImpl implements IClientManagerPhoneLo
 				"<itData>" +
 				"<![CDATA[<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
 				"<request>" +
-				"<account>"+ConstantV.account+"</account>" +
+				"<account>"+ ConstantV.account+"</account>" +
 				"<password>"+ConstantV.password+"</password>" +
 				"<tplInstId>"+ConstantV.tplInstId+"</tplInstId>" +
 				"<interfaceType>001</interfaceType>" +
@@ -58,8 +61,10 @@ public class ClientManagerPhoneLoginServiceImpl implements IClientManagerPhoneLo
 				"</soapenv:Body>" +
 				"</soapenv:Envelope>";
 		System.out.println("xml>>>>>>>>>>>>>>>>>>>>"+xml);
+		log.info("xml>>>>>>>>>>>>>>>>>>>>"+xml);
 		String post = HttpUtil.post(ConstantV.smsUrl, xml);
 		System.out.println("post>>>>>>>>>>>>>>>>>>>>"+post);
+		log.info("post>>>>>>>>>>>>>>>>>>>>"+post);
 		return randomNumber;
 	}
 

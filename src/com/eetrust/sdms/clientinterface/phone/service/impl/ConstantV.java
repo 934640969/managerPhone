@@ -1,10 +1,9 @@
-package com.eetrust.sdms.clientinterface.manager.service.impl;
+package com.eetrust.sdms.clientinterface.phone.service.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
- 
 
 public class ConstantV {
 
