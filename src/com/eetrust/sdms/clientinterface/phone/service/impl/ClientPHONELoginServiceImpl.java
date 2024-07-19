@@ -23,7 +23,7 @@ public class ClientPHONELoginServiceImpl implements IClientPHONELoginService {
 	public String ticket(HttpServletRequest request, HttpServletResponse response) throws RuntimeException {
 		log.info("外置jar认证>>>>>>>>>>>>>>>>>>>>>");
 		System.out.println("外置jar认证>>>>>>>>>>>>>>>>>>>>>");
-		String phone = request.getParameter("phone");
+		String phone = request.getParameter("loginName");
 		log.info("phone>>>>>>>"+phone);
 		System.out.println("phone>>>>>>>"+phone);
 		Random random = new Random();
