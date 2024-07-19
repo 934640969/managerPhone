@@ -34,6 +34,7 @@ public class ClientManagerPhoneLoginServiceImpl implements IClientManagerPhoneLo
 		// 生成的随机数
 		String randomNumber = sb.toString();
 		String msg="【新疆电信商密安全系统】您的验证码："+randomNumber+"（有效期为3分钟），发送参考时间为"+ DateUtil.format(new Date(), "yyyy-MM-dd HH:mm:ss") +"。如非本人操作，请忽略本短信!";
+		System.out.println("msg>>>>>>>>>>>>>>"+msg);
 		String content= Base64.encode(msg, "UTF-8");
 		String xml="<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:cxf=\"http://cxf.server.uccp.ztesoft.com/\"><soapenv:Header/>" +
 				"<soapenv:Body>" +
@@ -56,8 +57,7 @@ public class ClientManagerPhoneLoginServiceImpl implements IClientManagerPhoneLo
 				"</cxf:send>" +
 				"</soapenv:Body>" +
 				"</soapenv:Envelope>";
-
-
+		System.out.println("xml>>>>>>>>>>>>>>>>>>>>"+xml);
 		String post = HttpUtil.post(ConstantV.smsUrl, xml);
 		System.out.println("post>>>>>>>>>>>>>>>>>>>>"+post);
 		return randomNumber;
