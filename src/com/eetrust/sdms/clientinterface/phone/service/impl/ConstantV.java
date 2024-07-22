@@ -12,6 +12,8 @@ public class ConstantV {
 	public static String password = "";
 	public static String tplInstId = "";
 	public static String sendPhone = "";
+	public static String id = "";
+	public static String key = "";
 	static{
 		Properties p = new Properties();
 		InputStream in;		
@@ -24,6 +26,8 @@ public class ConstantV {
 			password = p.getProperty("password");
 			tplInstId = p.getProperty("tplInstId");
 			sendPhone = p.getProperty("sendPhone");
+			id = p.getProperty("X-APP-ID");
+			key = p.getProperty("X-APP-KEY");
 			in.close();
 		} catch (IOException e) {
 			e.printStackTrace();

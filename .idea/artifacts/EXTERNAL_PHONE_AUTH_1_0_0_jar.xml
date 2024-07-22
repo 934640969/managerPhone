@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="EXTERNAL_PHONE_AUTH-1.0.0:jar">
-    <output-path>$PROJECT_DIR$/classes/artifacts/EXTERNAL_PHONE_AUTH_1_0_0_jar</output-path>
-    <root id="archive" name="managerSSO.jar">
-      <element id="module-output" name="managerSSO" />
-    </root>
-  </artifact>
-</component>

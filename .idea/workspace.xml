@@ -10,12 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c5a6c4e-167f-495d-9284-f6bd893cbe8f" name="更改" comment="新疆电信短信验证码">
-      <change afterPath="$PROJECT_DIR$/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/EXTERNAL_PHONE_AUTH_1_0_0_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/IClientManagerPhoneLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/IClientPHONELoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/impl/ClientManagerPhoneLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/impl/ClientPHONELoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/impl/ConstantV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/impl/ConstantV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/manager/service/ssoLogin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/ssoLogin.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/impl/ClientPHONELoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/impl/ClientPHONELoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/impl/ConstantV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/impl/ConstantV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/ssoLogin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eetrust/sdms/clientinterface/phone/service/ssoLogin.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,26 +66,30 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2dkJ2I4cYwY8YkkHBtB4dhMtTbz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ClientManagerPhoneLoginServiceImpl.executor": "Run",
+    "Application.ClientPHONELoginServiceImpl.executor": "Run",
     "Application.aa.executor": "Run",
     "Application.com.eetrust.sdms.clientinterface.aa.executor": "Run",
+    "Application.com.eetrust.sdms.clientinterface.phone.service.impl.aa.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/place/managerPhone/lib",
+    "last_opened_file_path": "D:/place/managerPhone/src/com/eetrust/sdms/clientinterface/phone/service/impl",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding",
@@ -95,11 +98,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\place\managerPhone\src\com\eetrust\sdms\clientinterface\phone\service\impl" />
       <recent name="D:\place\managerPhone\lib" />
       <recent name="D:\place\managerPhone\src\com\eetrust\sdms\clientinterface\phone\service" />
       <recent name="D:\place\managerPhone\src\com\eetrust\sdms\clientinterface\manager\service" />
       <recent name="D:\place\managerPhone\src\com\eetrust\sdms\clientinterface\manager\service\impl" />
-      <recent name="D:\IdeaProjects\managerSSO\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\managerSSO\lib1" />
@@ -109,13 +112,26 @@
       <recent name="com.eetrust.sdms.clientinterface.phone.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.eetrust.sdms.clientinterface.aa">
+  <component name="RunManager" selected="Application.com.eetrust.sdms.clientinterface.phone.service.impl.aa">
     <configuration name="ClientManagerPhoneLoginServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eetrust.sdms.clientinterface.manager.service.impl.ClientManagerPhoneLoginServiceImpl" />
       <module name="managerSSO" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.eetrust.sdms.clientinterface.manager.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientPHONELoginServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eetrust.sdms.clientinterface.phone.service.impl.ClientPHONELoginServiceImpl" />
+      <module name="managerSSO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eetrust.sdms.clientinterface.phone.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,6 +158,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.eetrust.sdms.clientinterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.eetrust.sdms.clientinterface.phone.service.impl.aa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eetrust.sdms.clientinterface.phone.service.impl.aa" />
+      <module name="managerSSO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eetrust.sdms.clientinterface.phone.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,6 +271,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.eetrust.sdms.clientinterface.phone.service.impl.aa" />
+        <item itemvalue="Application.ClientPHONELoginServiceImpl" />
         <item itemvalue="Application.com.eetrust.sdms.clientinterface.aa" />
         <item itemvalue="Application.ClientManagerPhoneLoginServiceImpl" />
         <item itemvalue="Application.aa" />
@@ -301,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721354727121</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新疆电信短信验证码">
+      <option name="closed" value="true" />
+      <created>1721370892557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721370892557</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新疆电信短信验证码">
+      <option name="closed" value="true" />
+      <created>1721371011065</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721371011065</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

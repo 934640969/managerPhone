@@ -8,6 +8,8 @@ import com.eetrust.sdms.clientinterface.phone.service.IClientPHONELoginService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import org.apache.log4j.Logger;
 /***
@@ -22,7 +24,7 @@ public class ClientPHONELoginServiceImpl implements IClientPHONELoginService {
 
 	public String ticket(HttpServletRequest request, HttpServletResponse response) throws RuntimeException {
 		log.info("外置jar认证>>>>>>>>>>>>>>>>>>>>>");
-		String phone = request.getParameter("loginName");
+		String phone = (String) request.getAttribute("loginName");
 		log.info("phone>>>>>>>"+phone);
 		Random random = new Random();
 		StringBuilder sb = new StringBuilder();
@@ -42,6 +44,8 @@ public class ClientPHONELoginServiceImpl implements IClientPHONELoginService {
 				"<itData>" +
 				"<![CDATA[<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
 				"<request>" +
+				"<X-APP-ID>"+ ConstantV.id+"</X-APP-ID>" +
+				"<X-APP-KEY>"+ ConstantV.key+"</X-APP-KEY>" +
 				"<account>"+ ConstantV.account+"</account>" +
 				"<password>"+ConstantV.password+"</password>" +
 				"<tplInstId>"+ConstantV.tplInstId+"</tplInstId>" +
@@ -58,8 +62,13 @@ public class ClientPHONELoginServiceImpl implements IClientPHONELoginService {
 				"</soapenv:Body>" +
 				"</soapenv:Envelope>";
 		log.info("xml>>>>>>>>>>>>>>>>>>>>"+xml);
-		String post = HttpUtil.post(ConstantV.smsUrl, xml);
-		log.info("post>>>>>>>>>>>>>>>>>>>>"+post);
+		Map head=new HashMap<>();
+		head.put("X-APP-ID",ConstantV.id);
+		head.put("X-APP-KEY",ConstantV.key);
+		head.put("Content-Type","text/xml");
+		log.info("head>>>>>"+head);
+		String body = HttpUtil.createPost(ConstantV.smsUrl).addHeaders(head).body(xml).execute().body();
+		log.info("body>>>>>>>>>>>>>>>>>>>>"+body);
 		return randomNumber;
 	}
 
